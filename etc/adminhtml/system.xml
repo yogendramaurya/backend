@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="acodesh" translate="label" sortOrder="2000" class="acodesh-tab">
+            <label>Acodesh</label>
+        </tab>
+        <section id="acodesh_backend_config" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Acodesh Documentation</label>
+            <tab>acodesh</tab>
+            <class>item-acodesh-documentation</class>
+            <resource>Acodesh_Backend::DocumentationSettings</resource>
+            <group id="recommended_solutions" translate="label" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Recommended Solutions:</label>
+                <frontend_model>Acodesh\Backend\Block\Adminhtml\System\Config\Extensions</frontend_model>
+            </group>
+        </section>
+    </system>
+</config>
